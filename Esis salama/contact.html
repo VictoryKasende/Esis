@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../assets/bootstrap.min.css">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.0/css/line.css">
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.8.0/dist/leaflet.css"
+   integrity="sha512-hoalWLoI8r4UszCkZ5kL8vayOGVae1oxXe/2A4AO6J9+580uKHDO3JdHb7NzwwzK5xr/Fs0W40kiNHxM9vyTtQ=="
+   crossorigin=""/>
+    <title>Contact</title>
+</head>
+<body>
+    <header>
+        <div class="container-fluid">
+            <div class="row align-items-start" id="menu">
+              <div class="col">
+                <div class="col-6 p-2 ms-5 ">
+                    <i class="uil uil-facebook-f"id="uil1"></i>
+                    <i class="uil uil-instagram"id="uil1"></i>
+                    <i class="uil uil-youtube"id="uil1"></i>
+                    <i class="uil uil-laptop" id="uil1"></i>
+                    <i class="uil uil-envelope"id="uil1"></i>
+                </div>
+                <div class="col-6">
+                    <i class="uil uil-mobile-android-alt"id="uil2">    +234998662265</i>
+                    <i class="uil uil-chat"id="uil2"> Esis@gmail.com</i>
+                    <i class="uil uil-map-marker"id="uil2"> femme katangaise/N-65</i>
+                </div>
+              </div>
+            </div>  
+        </div>
+        <!-- Image centrale ou logo centrale -->
+        <div class="background text-center img-fluid mt-5 mb-5">
+            <img src="./images/WhatsApp Image 2022-09-16 at 21.01.47.jpeg" id="img1" alt="">
+        </div>
+        <!-- Debut navbar -->
+        <nav class="navbar navbar-expand-sm pb-2 pt-2 d-flex bg-white fixed-top" id="nav">
+          <div class="container-fluid">
+            <img src="images/logo_esis.png" alt="Logo" width="50" height="50" class="d-inline-block ms-lg-5 ms-sm-5" id="img2">
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation"><span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNavDropdown">
+              <ul class="navbar-nav  mt-2 text-center" id="nav-bar">
+                <li class="nav-item">
+                  <a class="nav-link active" id="liens" aria-current="page" href="index.html"><i class="uil uil-home" id="icon"></i> Accueil</a>
+                </li>
+                <li class="nav-item dropdown">
+                  <a class="nav-link active dropdown-toggle" id="liens" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                    <i class="uil uil-book-alt" id="icon"></i>Education
+                  </a>
+                  <ul class="dropdown-menu text-center">
+                    <li><a class="dropdown-item" id="apropos" href="#">Centre d'Excellence</a></li>
+                    <li><a class="dropdown-item" id="apropos" href="#">Bibliothèque</a></li>
+                    <li><a class="dropdown-item" id="apropos" href="#">Publication résultats</a></li>
+                    <li><a class="dropdown-item" id="apropos" href="#">Recours</a></li>
+                    <li><a class="dropdown-item" id="apropos" href="#">Horaire des cours</a></li>
+                    <li><a class="dropdown-item" id="apropos" href="#">E-learning</a></li>
+                    <li><a class="dropdown-item" id="apropos" href="#">Journée Scientifique 2022</a></li>
+                  </ul>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link active" id="liens" href="#"><i class="uil uil-file-contract" id="icon"></i> Actualites</a>
+                </li>
+                <li class="nav-item dropdown">
+                  <a class="nav-link active dropdown-toggle" id="liens" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                    <i class="uil uil-cloud-info" id="icon"></i>  A propos d'esis
+                  </a>
+                  <ul class="dropdown-menu text-center">
+                    <li><a class="dropdown-item" id="apropos" href="#">Présentation</a></li>
+                    <li><a class="dropdown-item" id="apropos" href="#">Cursus</a></li>
+                    <li><a class="dropdown-item" id="apropos" href="#">Admission</a></li>
+                    <li><a class="dropdown-item" id="apropos" href="#">Nous contacter</a></li>
+                  </ul>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </nav>
+    </header>
+    <br><br><br>
+    <div class="container-fluid w-75" id="biographie">
+        <div class="row g-4">
+          <div class="col-lg-6 col-md-6 col-sm-12">
+                <form method="POST" class="row g-3">
+                    <div class="col-12">
+                        <label for="exampleInputText" class="form-label">Nom</label>
+                        <input type="text" name="nom" class="form-control" id="exampleInputText" aria-describedby="emailHelp" autocomplete="off" required>
+                    </div>
+                    <div class="col-12">
+                        <label for="exampleInputText" class="form-label">Email</label>
+                        <input type="Email" name="post_nom" class="form-control"id="exampleInputText" aria-describedby="emailHelp" autocomplete="off" placeholder="exemple@gmail.com" required>
+                        </div>
+                    <div class="col-12">
+                        <label for="exampleInputText" class="form-label">sujet</label>
+                        <select name="choice" class="form-select" aria-label="Default select example">
+                          <optgroup>
+                              <option>Culture</option>
+                              <option>Scolaire</option>
+                              <option>Service</option>
+                              <option>Social</option>
+                          </optgroup>
+                        </select>
+                    </div>
+                    <div class="col-12">
+                        <label for="exampleInputText" class="form-label">Message</label>
+                        <input type="textarea" name="filiere" class="form-control message" id="exampleInputText" autocomplete="off" required>
+                    </div>
+                    <div class="col-12">
+                        <button type="submit" class="btn btn-outline-primary" id="choisir-filiere">Soumettre</button>
+                    </div>
+                </form>       
+            </div>
+            <div class="col-lg-6 col-md-6 col-sm-12">
+                <div id="map"></div>
+            </div>
+        </div>
+    </div>
+    <br><br><br>
+    <footer>
+        <div class="container w-75 pb-3">
+          <div class="row g-4 m-md-auto">
+            <div class="col-lg-3 col-md-6 col-sm-12">
+              <img src="images/logo_esis.png" alt="" class="img-fluid w-50"> Esisalama
+              <p style="text-align: justify; margin-top: 30px; font-size: 15px;">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Sunt, quibusdam obcaecati quo voluptatum suscipit ex ea nostrum distinctio</p>
+              <div class="icon_reseau">
+                <i class="uil uil-facebook-f"id="uil3"></i>
+                <i class="uil uil-instagram"id="uil3"></i>
+                <i class="uil uil-youtube"id="uil3"></i>
+                <i class="uil uil-linkedin"></i>
+              </div>
+            </div>
+            <div class="col-lg-3 col-md-6 col-sm-12">
+              <h5>Cours populaires</h3><br>
+              <div style="text-align: justify; font-size: 15px;">
+                <p>Math analyse</p><p>Algorithmique</p><p>Langace C</p><p>Scripting</p><p>Base de donnees</p><p>Reseaux</p>
+              </div>
+            </div>
+            <div class="col-lg-3 col-md-6 col-sm-12">
+              <h5>Categories cours</h3><br>
+              <div style="text-align: justify; font-size: 15px;">
+                <p>Math analyse</p><p>Algorithmique</p><p>Langace C</p><p>Scripting</p><p>Base de donnees</p><p>Reseaux</p>
+              </div>
+            </div>
+            <div class="col-lg-3 col-md-6 col-sm-12">
+              <h5>Nous contacter</h3><br>
+              <div style="text-align: justify; font-size: 15px;" class="icon_contact">
+                <p><i class="uil uil-map-marker"></i> femme katangaise</p><p><i class="uil uil-phone-alt"></i> +09644456778</p><p><i class="uil uil-envelope"></i> Esisgmail.com</p>
+              </div>
+            </div>
+          </div>
+        </div>
+    </footer>
+    <button id="btn"></button>
+    <script src="https://unpkg.com/leaflet@1.8.0/dist/leaflet.js"
+   integrity="sha512-BB3hKbKWOc9Ez/TAwyWxNXeoV9c1v6FIeYiBieIWkpLjauysF18NzgR1MBNBXf8/KABdlkX68nAhlwcDFLGPCQ=="
+   crossorigin=""></script>
+    <script src="./app.js"></script>
+    <script src="../assets/bootstrap.bundle.min.js"></script>
+</body>
+</html>
